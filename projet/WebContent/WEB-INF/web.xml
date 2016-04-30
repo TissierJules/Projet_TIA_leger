@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>Inscription</display-name>
+  <listener>
+    <listener-class>com.projet.config.InitialisationDaoFactory</listener-class>
+  </listener>
+  <servlet>
+    <servlet-name>Inscription</servlet-name>
+    <servlet-class>com.projet.servlets.Inscription</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Inscription</servlet-name>
+    <url-pattern>/inscription</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>Connexion</servlet-name>
+    <servlet-class>com.projet.servlets.Connexion</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Connexion</servlet-name>
+    <url-pattern>/connexion</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>CreerPartie</servlet-name>
+    <servlet-class>com.projet.servlets.CreerPartie</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CreerPartie</servlet-name>
+    <url-pattern>/creerPartie</url-pattern>
+  </servlet-mapping>
+</web-app>
